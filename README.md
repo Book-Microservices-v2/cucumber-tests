@@ -1,6 +1,6 @@
 # Book Extra Chapters | E.1. Cucumber Tests
 
-This repository includes the source code for an extra chapter of the book [Learn Microservices with Spring Boot](https://www.apress.com/book/9781484261309).
+This repository includes the source code for an extra chapter of the book [Learn Microservices with Spring Boot](https://www.kqzyfj.com/tr67wktqks7GDBDEB979BG9CADD?url=https%3A%2F%2Fwww.apress.com%2Fgp%2Fbook%2F9781484261309).
 
 The full contents of this extra chapter are available online (work in progress): [End-To-End Tests with Cucumber](https://tpd.io/book-extra).
 
@@ -23,7 +23,7 @@ In this online tutorial, I show you how to set up a Cucumber project with `cucum
 
 To run the cucumber tests against the backend server, you need to deploy the backend services first 🙂
 
-The backend has two Spring Boot microservices with business logic, a gateway, a discovery server, the RabbitMQ broker, and a centralized logs service. You can run the complete system using Docker Compose. If you're interested in how to build this system from scratch, and analyze the pros/cons of microservices, check out [my book](https://www.apress.com/book/9781484261309).
+The backend has two Spring Boot microservices with business logic, a gateway, a discovery server, the RabbitMQ broker, and a centralized logs service. You can run the complete system using Docker Compose. If you're interested in how to build this system from scratch, and analyze the pros/cons of microservices, check out [my book](https://www.kqzyfj.com/tr67wktqks7GDBDEB979BG9CADD?url=https%3A%2F%2Fwww.apress.com%2Fgp%2Fbook%2F9781484261309).
 
 For our tests, we access the system using the same entry points as the frontend: the REST API exposed via Gateway on `localhost:8000/`.
 
