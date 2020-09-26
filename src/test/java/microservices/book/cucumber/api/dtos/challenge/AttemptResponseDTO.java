@@ -1,6 +1,6 @@
-package microservices.book.cucumber.dtos.challenge;
+package microservices.book.cucumber.api.dtos.challenge;
 
-import microservices.book.cucumber.dtos.users.UserDTO;
+import microservices.book.cucumber.api.dtos.users.UserDTO;
 
 public class AttemptResponseDTO {
 

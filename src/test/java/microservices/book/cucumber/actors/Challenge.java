@@ -1,25 +1,24 @@
-package microservices.book;
+package microservices.book.cucumber.actors;
 
 import java.util.List;
 import java.util.UUID;
 
-import microservices.book.cucumber.dtos.challenge.AttemptRequestDTO;
-import microservices.book.cucumber.dtos.challenge.AttemptResponseDTO;
-import microservices.book.cucumber.dtos.challenge.ChallengeDTO;
+import microservices.book.cucumber.api.APIClient;
+import microservices.book.cucumber.api.dtos.challenge.AttemptRequestDTO;
+import microservices.book.cucumber.api.dtos.challenge.AttemptResponseDTO;
+import microservices.book.cucumber.api.dtos.challenge.ChallengeDTO;
 
 import static org.assertj.core.api.Assertions.*;
 
-public class User {
+public class Challenge {
 
-    private String userName;
-    private String originalName;
+    private final String userName;
+    private final String originalName;
+    private final APIClient apiClient;
     private long userId;
     private ChallengeDTO currentChallenge;
-    private AttemptResponseDTO currentResponse;
-    private APIClient apiClient;
-    private List<AttemptResponseDTO> stats;
 
-    public User(String userName) {
+    public Challenge(String userName) {
         this.userName = userName + "-" + UUID.randomUUID().toString();
         this.originalName = userName;
         this.apiClient = new APIClient();
@@ -39,22 +38,16 @@ public class User {
         );
         assertThat(attemptResponse.statusCode()).isEqualTo(200);
         this.userId = attemptResponse.body().getUser().getId();
-        this.currentResponse = attemptResponse.body();
     }
 
     public List<AttemptResponseDTO> retrieveStats() throws Exception {
         var stats = apiClient.getStats(this.userName);
         assertThat(stats.statusCode()).isEqualTo(200);
-        this.stats = stats.body();
-        return this.stats;
+        return stats.body();
     }
 
     public ChallengeDTO getCurrentChallenge() {
         return currentChallenge;
-    }
-
-    public String getUserName() {
-        return userName;
     }
 
     public String getOriginalName() {

@@ -5,17 +5,17 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-import microservices.book.User;
+import microservices.book.cucumber.actors.Challenge;
 
 import static org.assertj.core.api.Assertions.*;
 
 public class ChallengeStepDefinitions {
 
-    private User userActor;
+    private Challenge userActor;
 
     @Given("a new user {word}")
     public void aNewUser(String user) {
-        this.userActor = new User(user);
+        this.userActor = new Challenge(user);
     }
 
     @When("(s)he requests a new challenge")

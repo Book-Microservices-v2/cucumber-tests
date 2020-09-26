@@ -1,4 +1,4 @@
-package microservices.book.cucumber.dtos.leaderboard;
+package microservices.book.cucumber.api.dtos.leaderboard;
 
 import java.util.List;
 

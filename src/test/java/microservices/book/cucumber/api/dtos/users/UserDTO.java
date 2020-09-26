@@ -1,4 +1,4 @@
-package microservices.book.cucumber.dtos.users;
+package microservices.book.cucumber.api.dtos.users;
 
 public class UserDTO {
     private long id;

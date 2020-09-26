@@ -9,16 +9,16 @@ import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 
-import microservices.book.Leaderboard;
-import microservices.book.User;
-import microservices.book.cucumber.dtos.leaderboard.LeaderboardRowDTO;
+import microservices.book.cucumber.actors.Leaderboard;
+import microservices.book.cucumber.actors.Challenge;
+import microservices.book.cucumber.api.dtos.leaderboard.LeaderboardRowDTO;
 
 import static org.assertj.core.api.Assertions.*;
 import static org.awaitility.Awaitility.*;
 
 public class GameStepDefinitions {
 
-    private Map<String, User> userActors;
+    private Map<String, Challenge> userActors;
     private final Leaderboard leaderboardActor;
 
     public GameStepDefinitions() {
@@ -33,7 +33,7 @@ public class GameStepDefinitions {
     private void processSolvedChallenges(DataTable userToSolvedChallenges) throws Exception {
         userActors = new HashMap<>();
         for (var userToSolved : userToSolvedChallenges.asMaps()) {
-            var user = new User(userToSolved.get("user"));
+            var user = new Challenge(userToSolved.get("user"));
             user.askForChallenge();
             int solved = Integer.parseInt(userToSolved.get("solved_challenges"));
             for (int i = 0; i < solved; i++) {

@@ -1,4 +1,4 @@
-package microservices.book.cucumber.dtos.challenge;
+package microservices.book.cucumber.api.dtos.challenge;
 
 import java.util.concurrent.ThreadLocalRandom;
 

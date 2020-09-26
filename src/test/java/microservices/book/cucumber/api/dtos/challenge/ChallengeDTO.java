@@ -1,4 +1,4 @@
-package microservices.book.cucumber.dtos.challenge;
+package microservices.book.cucumber.api.dtos.challenge;
 
 public class ChallengeDTO {
     private final int factorA;

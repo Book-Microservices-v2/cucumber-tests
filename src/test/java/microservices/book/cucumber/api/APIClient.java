@@ -1,4 +1,4 @@
-package microservices.book;
+package microservices.book.cucumber.api;
 
 import java.io.UncheckedIOException;
 import java.net.URI;
@@ -13,10 +13,10 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.type.CollectionType;
 
-import microservices.book.cucumber.dtos.challenge.AttemptRequestDTO;
-import microservices.book.cucumber.dtos.challenge.AttemptResponseDTO;
-import microservices.book.cucumber.dtos.challenge.ChallengeDTO;
-import microservices.book.cucumber.dtos.leaderboard.LeaderboardRowDTO;
+import microservices.book.cucumber.api.dtos.challenge.AttemptRequestDTO;
+import microservices.book.cucumber.api.dtos.challenge.AttemptResponseDTO;
+import microservices.book.cucumber.api.dtos.challenge.ChallengeDTO;
+import microservices.book.cucumber.api.dtos.leaderboard.LeaderboardRowDTO;
 
 import static java.net.http.HttpRequest.BodyPublishers.*;
 

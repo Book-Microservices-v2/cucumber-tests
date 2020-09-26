@@ -1,9 +1,10 @@
-package microservices.book;
+package microservices.book.cucumber.actors;
 
 import java.util.List;
 import java.util.Optional;
 
-import microservices.book.cucumber.dtos.leaderboard.LeaderboardRowDTO;
+import microservices.book.cucumber.api.APIClient;
+import microservices.book.cucumber.api.dtos.leaderboard.LeaderboardRowDTO;
 
 import static org.assertj.core.api.Assertions.*;
 
