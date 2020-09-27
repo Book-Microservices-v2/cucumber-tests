@@ -1,0 +1,17 @@
+@startuml
+component api as "Api Client"
+collections dtos as "DTOs"
+collections steps as "Step Definition Files"
+collections gherkin as "Gherkin files"
+component entry as "RunCucumberTest"
+component Challenge
+component User
+
+api "1" *.right.> "*" dtos : uses
+entry ..> gherkin : executes
+gherkin .> steps : map to
+steps "1" *--> "*" Challenge : creates
+steps "1" *--> "*" User : creates
+Challenge "1" *--> "1" api : uses
+User "1" *--> "1" api : uses
+@enduml

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="-114.114496866862" y="80.0">microservices.book.cucumber.api.dtos.challenge.AttemptRequestDTO</node>
+    <node x="381.75" y="260.0">microservices.book.cucumber.actors.Leaderboard</node>
+    <node x="11.683390022675724" y="0.0">microservices.book.cucumber.api.dtos.challenge.ChallengeDTO</node>
+    <node x="313.39844104308395" y="360.0">microservices.book.cucumber.steps.GameStepDefinitions</node>
+    <node x="120.3022392290249" y="260.0">microservices.book.cucumber.actors.Challenge</node>
+    <node x="18.677607709750646" y="360.0">microservices.book.cucumber.steps.ChallengeStepDefinitions</node>
+    <node x="223.5" y="80.0">microservices.book.cucumber.api.dtos.challenge.AttemptResponseDTO</node>
+    <node x="432.5" y="80.0">microservices.book.cucumber.api.dtos.leaderboard.LeaderboardRowDTO</node>
+    <node x="268.97301587301587" y="170.0">microservices.book.cucumber.api.APIClient</node>
+    <node x="0.0" y="435.0">microservices.book.RunCucumberTest</node>
+    <node x="266.5" y="0.0">microservices.book.cucumber.api.dtos.users.UserDTO</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="microservices.book.cucumber.actors.Leaderboard" target="microservices.book.cucumber.api.APIClient">
+      <point x="-50.25" y="-15.0" />
+      <point x="398.5" y="240.0" />
+      <point x="343.34801587301587" y="240.0" />
+      <point x="14.875" y="15.0" />
+    </edge>
+    <edge source="microservices.book.cucumber.steps.GameStepDefinitions" target="microservices.book.cucumber.actors.Challenge">
+      <point x="-84.42857142857144" y="-15.0" />
+      <point x="327.4698696145125" y="330.0" />
+      <point x="179.8022392290249" y="330.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="microservices.book.cucumber.api.dtos.challenge.AttemptResponseDTO" target="microservices.book.cucumber.api.dtos.users.UserDTO">
+      <point x="-47.25" y="-15.0" />
+      <point x="270.75" y="60.0" />
+      <point x="292.25" y="60.0" />
+      <point x="-25.75" y="15.0" />
+    </edge>
+    <edge source="microservices.book.cucumber.api.APIClient" target="microservices.book.cucumber.api.dtos.challenge.ChallengeDTO">
+      <point x="-14.875" y="-15.0" />
+      <point x="313.59801587301587" y="130.0" />
+      <point x="213.0" y="130.0" />
+      <point x="213.0" y="60.0" />
+      <point x="135.93339002267572" y="60.0" />
+      <point x="53.25" y="15.0" />
+    </edge>
+    <edge source="microservices.book.cucumber.api.APIClient" target="microservices.book.cucumber.api.dtos.challenge.AttemptResponseDTO">
+      <point x="14.875" y="-15.0" />
+      <point x="343.34801587301587" y="150.0" />
+      <point x="365.25" y="150.0" />
+      <point x="47.25" y="15.0" />
+    </edge>
+    <edge source="microservices.book.cucumber.steps.GameStepDefinitions" target="microservices.book.cucumber.api.dtos.leaderboard.LeaderboardRowDTO">
+      <point x="84.42857142857147" y="-15.0" />
+      <point x="496.3270124716554" y="340.0" />
+      <point x="559.9730158730158" y="340.0" />
+      <point x="559.9730158730158" y="150.0" />
+      <point x="590.875" y="150.0" />
+      <point x="67.875" y="15.0" />
+    </edge>
+    <edge source="microservices.book.cucumber.api.APIClient" target="microservices.book.cucumber.api.dtos.leaderboard.LeaderboardRowDTO">
+      <point x="44.625" y="-15.0" />
+      <point x="373.09801587301587" y="150.0" />
+      <point x="455.125" y="150.0" />
+      <point x="-67.875" y="15.0" />
+    </edge>
+    <edge source="microservices.book.cucumber.steps.ChallengeStepDefinitions" target="microservices.book.cucumber.actors.Challenge">
+      <point x="-59.00000000000006" y="-15.0" />
+      <point x="77.67760770975059" y="340.0" />
+      <point x="132.20223922902488" y="340.0" />
+      <point x="-47.60000000000002" y="15.0" />
+    </edge>
+    <edge source="microservices.book.cucumber.steps.GameStepDefinitions" target="microservices.book.cucumber.actors.Leaderboard">
+      <point x="0.0" y="-15.0" />
+      <point x="411.89844104308395" y="340.0" />
+      <point x="404.08333333333337" y="340.0" />
+      <point x="-44.66666666666666" y="15.0" />
+    </edge>
+    <edge source="microservices.book.cucumber.actors.Challenge" target="microservices.book.cucumber.api.dtos.challenge.AttemptResponseDTO">
+      <point x="9.916666666666686" y="-15.0" />
+      <point x="189.7189058956916" y="220.0" />
+      <point x="258.47301587301587" y="220.0" />
+      <point x="258.47301587301587" y="150.0" />
+      <point x="270.75" y="150.0" />
+      <point x="-47.25" y="15.0" />
+    </edge>
+    <edge source="microservices.book.cucumber.api.APIClient" target="microservices.book.cucumber.api.dtos.challenge.AttemptRequestDTO">
+      <point x="-44.625" y="-15.0" />
+      <point x="283.84801587301587" y="140.0" />
+      <point x="157.25" y="140.0" />
+      <point x="45.25" y="15.0" />
+    </edge>
+    <edge source="microservices.book.cucumber.actors.Leaderboard" target="microservices.book.cucumber.api.dtos.leaderboard.LeaderboardRowDTO">
+      <point x="16.75" y="-15.0" />
+      <point x="465.5" y="230.0" />
+      <point x="517.5" y="230.0" />
+      <point x="517.5" y="150.0" />
+      <point x="500.375" y="150.0" />
+      <point x="-22.625" y="15.0" />
+    </edge>
+    <edge source="microservices.book.cucumber.actors.Challenge" target="microservices.book.cucumber.api.APIClient">
+      <point x="29.75" y="-15.0" />
+      <point x="209.5522392290249" y="230.0" />
+      <point x="283.84801587301587" y="230.0" />
+      <point x="-44.625" y="15.0" />
+    </edge>
+    <edge source="microservices.book.cucumber.actors.Challenge" target="microservices.book.cucumber.api.dtos.challenge.AttemptRequestDTO">
+      <point x="-9.916666666666686" y="-15.0" />
+      <point x="169.88557256235822" y="220.0" />
+      <point x="66.75" y="220.0" />
+      <point x="-45.25" y="15.0" />
+    </edge>
+    <edge source="microservices.book.cucumber.api.dtos.challenge.AttemptRequestDTO" target="microservices.book.cucumber.api.dtos.challenge.ChallengeDTO">
+      <point x="0.0" y="-15.0" />
+      <point x="112.0" y="60.0" />
+      <point x="100.43339002267572" y="60.0" />
+      <point x="17.75" y="15.0" />
+    </edge>
+    <edge source="microservices.book.cucumber.actors.Challenge" target="microservices.book.cucumber.api.dtos.challenge.ChallengeDTO">
+      <point x="-49.583333333333314" y="-15.0" />
+      <point x="130.2189058956916" y="240.0" />
+      <point x="0.0" y="240.0" />
+      <point x="0.0" y="50.0" />
+      <point x="29.433390022675724" y="50.0" />
+      <point x="-53.25" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.1650671841898639" x="240.01551437377918" y="241.75516683405095" />
+  <SelectedNodes>
+    <node>microservices.book.cucumber.api.dtos.challenge.AttemptRequestDTO</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
