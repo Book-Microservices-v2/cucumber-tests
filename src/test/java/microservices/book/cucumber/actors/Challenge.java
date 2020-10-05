@@ -34,7 +34,8 @@ public class Challenge {
         assertThat(this.currentChallenge)
                 .as("You have to get a challenge first").isNotNull();
         var attemptResponse = apiClient.sendAttempt(
-                AttemptRequestDTO.solve(this.currentChallenge, correct, this.userName)
+                AttemptRequestDTO.solve(this.currentChallenge,
+                        correct, this.userName)
         );
         assertThat(attemptResponse.statusCode()).isEqualTo(200);
         this.userId = attemptResponse.body().getUser().getId();

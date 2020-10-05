@@ -10,8 +10,8 @@ import static org.assertj.core.api.Assertions.*;
 
 public class Leaderboard {
 
+    private final APIClient apiClient;
     private List<LeaderboardRowDTO> leaderboard;
-    private APIClient apiClient;
 
     public Leaderboard() {
         apiClient = new APIClient();
