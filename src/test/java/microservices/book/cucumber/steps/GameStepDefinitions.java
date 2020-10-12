@@ -70,7 +70,7 @@ public class GameStepDefinitions {
     }
 
     @Then("{word} is above {word} in the ranking")
-    public void userIsAboveUser(String userAbove, String userBelow) throws Exception {
+    public void userIsAboveUser(String userAbove, String userBelow) {
         await().atMost(5, TimeUnit.SECONDS).untilAsserted(
                 () -> {
                     var updatedLeaderboard = this.leaderboardActor.update();
