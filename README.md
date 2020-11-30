@@ -2,7 +2,7 @@
 
 This repository includes the source code for an extra chapter of the book [Learn Microservices with Spring Boot](https://www.kqzyfj.com/tr67wktqks7GDBDEB979BG9CADD?url=https%3A%2F%2Fwww.apress.com%2Fgp%2Fbook%2F9781484261309).
 
-The full contents of this extra chapter are available online (work in progress): [End-To-End Tests with Cucumber](https://tpd.io/book-extra).
+The full contents of this extra chapter are available online: [End-To-End Tests with Cucumber](https://thepracticaldeveloper.com/cucumber-guide-1-intro-bdd-gherkin).
 
 In this online tutorial, I show you how to set up a Cucumber project with `cucumber-jvm`, the Java module. Then, you'll learn a few core aspects:
 
@@ -52,6 +52,6 @@ $ ./mvnw clean test
 
 You should see the test results in console. If you're curious about what's happening in the backend, just have a look at the docker logs. Events are propagated, and the Gamification microservice assigns new score and badges.
 
-Remember that the [full contents of the guide are available online (in progress)](https://tpd.io/book-extra), **for free**.
+Remember that the [full contents of the guide are available online](https://thepracticaldeveloper.com/cucumber-guide-1-intro-bdd-gherkin), **for free**.
 
 Did you like the tutorial? Great! Please star this repo 😄 Thanks!
